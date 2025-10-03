@@ -31,4 +31,4 @@ def render_card(col, title, button_cap, url, img_path, img_cap):
 
 c1, c2 = st.columns(2, gap="large")
 render_card(c1, "Day 1: Design of Experiments", "DOE Playground", DOE_URL, DOE_IMG, "doe")
-render_card(c2, "Day 2: Metamodeling", "Metamodel Playground",       META_URL, META_IMG, "meta")
+render_card(c2, "Day 2: Metamodeling", "Metamodel Playground", META_URL, META_IMG, "meta")
