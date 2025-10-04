@@ -11,10 +11,11 @@ def img_tag(path: str, alt: str = "") -> str:
         f'src="data:image/png;base64,{b64}"/>'
     )
 
-DOE_URL  = "https://doe-4853.streamlit.app/"
+
 META_URL = "https://metamodels-4853.streamlit.app/"
-DOE_IMG  = "assets/day1.png"
-META_IMG = "assets/day2.png"
+TOPT_URL  = "https://topo-opt-runner.streamlit.app/"
+META_IMG  = "assets/day1.png"
+TOPT_IMG = "assets/day2.png"
 
 st.set_page_config(page_title="Computational Design", layout="wide")
 st.title("Computational Design")
@@ -30,5 +31,5 @@ def render_card(col, title, button_cap, url, img_path, img_cap):
             st.caption(img_cap)
 
 c1, c2 = st.columns(2, gap="large")
-render_card(c1, "Day 1: Design of Experiments", "DOE Playground", DOE_URL, DOE_IMG, "doe")
-render_card(c2, "Day 2: Metamodeling", "Metamodel Playground", META_URL, META_IMG, "meta")
+render_card(c1, "Day 1: Metamodeling", "Metamodel Playground", META_URL, META_IMG, "meta")
+render_card(c2, "Day 2: Digital Twin", "Topology Optimization of a Cantilevered Beam", TOPT_URL, TOPT_IMG, "topo")
